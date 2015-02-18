@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projectifier", "projectifier\projectifier.csproj", "{AFBA4206-90EB-4350-9A11-C1733661C46A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projectifier_IntegrationTests", "projectifier\projectifier_IntegrationTests\projectifier_IntegrationTests.csproj", "{09F3478C-1FD4-45CB-8DC4-254D0E77C6DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0F79491F-3164-4AE4-BA12-CF01C384E1B2}"
+	ProjectSection(SolutionItems) = preProject
+		IntegrationTests.testsettings = IntegrationTests.testsettings
+		UnitTests.testsettings = UnitTests.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "projectifier_UnitTests", "projectifier\projectifier_UnitTests\projectifier_UnitTests.csproj", "{BB5C796D-98FE-41B7-958F-0FC5D522D4F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AFBA4206-90EB-4350-9A11-C1733661C46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFBA4206-90EB-4350-9A11-C1733661C46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFBA4206-90EB-4350-9A11-C1733661C46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFBA4206-90EB-4350-9A11-C1733661C46A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F3478C-1FD4-45CB-8DC4-254D0E77C6DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F3478C-1FD4-45CB-8DC4-254D0E77C6DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F3478C-1FD4-45CB-8DC4-254D0E77C6DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F3478C-1FD4-45CB-8DC4-254D0E77C6DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB5C796D-98FE-41B7-958F-0FC5D522D4F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB5C796D-98FE-41B7-958F-0FC5D522D4F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB5C796D-98FE-41B7-958F-0FC5D522D4F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB5C796D-98FE-41B7-958F-0FC5D522D4F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable
+		xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"
+		xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<Extern href="stdidcmd.h"/>
+	<Extern href="vsshlids.h"/>
+	<Commands package="rules.vs.projectifier.package">
+		<Groups>
+			<Group
+					guid="rules.vs.projecfitier.project"
+					id="rules.vs.projectifier.project.group"
+					priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_PROJNODE"/>
+			</Group>
+			<Group
+					guid="rules.vs.projecfitier.solution"
+					id="rules.vs.projectifier.solution.group"
+					priority="0x0600">
+				<Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_SOLNNODE"/>
+			</Group>
+		</Groups>
+		<Buttons>
+			<Button
+					guid="rules.vs.projecfitier.project"
+					id="rules.vs.projectifier.project.arrange-files"
+					priority="0x0100"
+					type="Button">
+				<Parent
+						guid="rules.vs.projecfitier.project"
+						id="rules.vs.projectifier.project.group" />
+				<Icon
+						guid="rules.vs.projectifier.icons"
+						id="sort-ascending" />
+				<CommandFlag>DynamicVisibility</CommandFlag>
+				<Strings>
+					<ButtonText>Arrange files in project</ButtonText>
+				</Strings>
+			</Button>
+			<Button
+					guid="rules.vs.projecfitier.project"
+					id="rules.vs.projectifier.project.auto-arrange-files"
+					priority="0x0101"
+					type="Button">
+				<Parent
+						guid="rules.vs.projecfitier.project"
+						id="rules.vs.projectifier.project.group" />
+				<Icon
+						guid="rules.vs.projectifier.icons"
+						id="sort-ascending" />
+				<CommandFlag>DontCache</CommandFlag>
+				<CommandFlag>TextChanges</CommandFlag>
+				<CommandFlag>DynamicVisibility</CommandFlag>
+				<Strings>
+					<ButtonText>Enable auto arrange file in project</ButtonText>
+				</Strings>
+			</Button>
+			<Button
+					guid="rules.vs.projecfitier.solution"
+					id="rules.vs.projectifier.solution.arrange-files"
+					priority="0x0100"
+					type="Button">
+				<Parent
+						guid="rules.vs.projecfitier.solution"
+						id="rules.vs.projectifier.solution.group" />
+				<Icon
+						guid="rules.vs.projectifier.icons"
+						id="sort-ascending" />
+				<CommandFlag>DynamicVisibility</CommandFlag>
+				<Strings>
+					<ButtonText>Arrange files in all projects</ButtonText>
+				</Strings>
+			</Button>
+			<Button
+					guid="rules.vs.projecfitier.solution"
+					id="rules.vs.projectifier.solution.auto-arrange-files"
+					priority="0x0101"
+					type="Button">
+				<Parent
+						guid="rules.vs.projecfitier.solution"
+						id="rules.vs.projectifier.solution.group" />
+				<Icon
+						guid="rules.vs.projectifier.icons"
+						id="sort-ascending" />
+				<CommandFlag>DontCache</CommandFlag>
+				<CommandFlag>TextChanges</CommandFlag>
+				<CommandFlag>DynamicVisibility</CommandFlag>
+				<Strings>
+					<ButtonText>Enable auto arrange files in all projects</ButtonText>
+				</Strings>
+			</Button>
+		</Buttons>
+		<Bitmaps>
+			<Bitmap
+					guid="rules.vs.projectifier.icons"
+					href="Resources\icons.png"
+					usedList="sort-ascending" />
+		</Bitmaps>
+	</Commands>
+	<Symbols>
+		<GuidSymbol name="rules.vs.projectifier.package" value="{6bb65fc2-68d2-4b1a-b9aa-c18b85b8b1ba}" />
+		<GuidSymbol name="rules.vs.projecfitier.project" value="{ff15fc74-35dc-41eb-b557-a7e7184b862a}">
+			<IDSymbol name="rules.vs.projectifier.project.group" value="0x1020" />
+			<IDSymbol name="rules.vs.projectifier.project.arrange-files" value="0x0100" />
+			<IDSymbol name="rules.vs.projectifier.project.auto-arrange-files" value="0x0101" />
+		</GuidSymbol>
+		<GuidSymbol name="rules.vs.projecfitier.solution" value="{77D5D091-657C-494C-85A9-AF7CD387C0F3}">
+			<IDSymbol name="rules.vs.projectifier.solution.group" value="0x1020" />
+			<IDSymbol name="rules.vs.projectifier.solution.arrange-files" value="0x0100" />
+			<IDSymbol name="rules.vs.projectifier.solution.auto-arrange-files" value="0x0101" />
+		</GuidSymbol>
+		<GuidSymbol name="rules.vs.projectifier.icons" value="{39b0b575-00e0-4d4b-a979-9e09dad484d9}" >
+			<IDSymbol name="sort-ascending" value="1" />
+		</GuidSymbol>
+	</Symbols>
+</CommandTable>
